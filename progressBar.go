@@ -7,7 +7,7 @@ import (
 	"github.com/cheggaaa/pb/v3"
 )
 
-type progressBar struct {
+type ProgressBar struct {
 	sync.Mutex
 	// bar *progressbar.ProgressBar
 	bar *pb.ProgressBar
@@ -29,7 +29,7 @@ func barConfig(bar *pb.ProgressBar) {
 	bar.Set(pb.Terminal, true)
 }
 
-func (p *progressBar) TrackProgress(src string, current, total int64, stream io.ReadCloser) io.ReadCloser {
+func (p *ProgressBar) TrackProgress(src string, current, total int64, stream io.ReadCloser) io.ReadCloser {
 	p.Lock()
 	defer p.Unlock()
 	newBar := pb.New64(total)
