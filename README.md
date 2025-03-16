@@ -13,7 +13,10 @@ git clone https://github.com/Aervyon/win-setup-helper
 
 Make a `download.txt` and fill it with a bunch of URLs for webpages you'd like to download, you can also supply Git repositories.
 
+You will also need to make a `open.txt`, this can be empty or full of URL's that you want to be opened when you run this program.
+
 Each webpage or repository needs to be on a new line, and repositories cannot start with https or http.
+Webpages should start with either http or https however.
 Example:
 ```txt
 https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/Git-2.48.1-64-bit.exe
