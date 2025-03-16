@@ -35,7 +35,6 @@ To run this, simply navigate to where you stored it and do
 in PowerShell or Command
 
 ## Other Plans
-- Open pages in the browser
 - Automatically run the installers it downloads
 - Install directly from winget
 - Post-install configuration with a JSON or TOML file.

@@ -9,6 +9,9 @@ import (
 //go:embed download.txt
 var downloadsFile string
 
+//go:embed open.txt
+var openFile string
+
 func main() {
 	// Get the current working directory
 	dir, err := os.Getwd()
@@ -21,5 +24,11 @@ func main() {
 		HandleDownloading(dir)
 	} else {
 		fmt.Println("No files need to be downloaded. Skipping.")
+	}
+
+	if openFile != "" {
+		HandleOpening()
+	} else {
+		fmt.Println("No URLs need to be opened. Skipping.")
 	}
 }
