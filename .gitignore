@@ -25,5 +25,6 @@ go.work.sum
 .env
 
 # Special files
+download.txt
 open.txt
 win_downloads
